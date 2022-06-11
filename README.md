@@ -5,6 +5,8 @@
 
 A Sublime Text package that offers enhanced syntax highlighting for [PyScript](https://pyscript.net/). Read more for the full documentation.
 
+![PyScript Highlighting Demo](./images/pyscript_highlighting_demo.png)
+
 ## Features
 
 - Syntax highlighting for python scripts within the `py-script` tags.
