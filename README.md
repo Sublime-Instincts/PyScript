@@ -1,6 +1,6 @@
 # PyScript
 
-![LICENSE](https://img.shields.io/badge/LICENSE-MIT-green?style=for-the-badge) ![Sublime Text](https://img.shields.io/badge/ST-Build%204126+-orange?style=for-the-badge&logo=sublime-text) ![Tag](https://img.shields.io/github/v/tag/Sublime-Instincts/PyScript?style=for-the-badge&logo=github&sort=semver) ![Downloads](https://img.shields.io/packagecontrol/dt/Twig?style=for-the-badge)
+![LICENSE](https://img.shields.io/badge/LICENSE-MIT-green?style=for-the-badge) ![Sublime Text](https://img.shields.io/badge/ST-Build%204126+-orange?style=for-the-badge&logo=sublime-text) ![Tag](https://img.shields.io/github/v/tag/Sublime-Instincts/PyScript?style=for-the-badge&logo=github&sort=semver) ![Downloads](https://img.shields.io/packagecontrol/dt/PyScript?style=for-the-badge)
 ![Syntax tests](https://img.shields.io/github/workflow/status/Sublime-Instincts/PyScript/syntax_test?color=green&label=Syntax%20Tests&logo=github&logoColor=white&style=for-the-badge)
 
 A Sublime Text package that offers enhanced syntax highlighting for [PyScript](https://pyscript.net/). Read more for the full documentation.
@@ -36,7 +36,7 @@ Please follow the issue template that has been setup while reporting any bug(s) 
 
 ## Acknowledgements.
 
-The [syntax_test.yml](https://github.com/Sublime-Instincts/PyScript/.github/workflows/syntax_test.yml) is taken & used (with some modifications) from the official [Packages](https://github.com/sublimehq/Packages) repository. So full credit goes to them for it.
+The [syntax_test.yml](https://github.com/Sublime-Instincts/PyScript/blob/master/.github/workflows/syntax_test.yml) is taken & used (with some modifications) from the official [Packages](https://github.com/sublimehq/Packages) repository. So full credit goes to them for it.
 
 ## License
 The MIT License (MIT)
