@@ -1,0 +1,78 @@
+%YAML 1.2
+---
+scope: text.html.basic
+name: HTML (PyScript)
+file_extensions:
+  - htmlpy
+
+extends: Packages/HTML/HTML.sublime-syntax
+version: 2
+
+variables:
+  pyscript_content_end: |-
+    (?x:
+      (?: (\s*) (-->) \s* )? (?=</(?i:py-script){{tag_name_break_char}})
+      |   ^ (\s*) (-->) \s* $
+    )
+
+contexts:
+  tag:
+    - meta_prepend: true
+    - include: pyscript-tag
+
+  pyscript-tag:
+    - match: (<)((?i:py-script)){{tag_name_break}}
+      captures:
+        1: punctuation.definition.tag.begin.html
+        2: entity.name.tag.pyscript.html
+      push: pyscript
+    - match: (</)((?i:py-script){{tag_name_break}})
+      captures:
+        1: punctuation.definition.tag.begin.html
+        2: entity.name.tag.pyscript.html
+      push: pyscript-close-tag-content
+
+  script-close-tag:
+    - match: (</)((?i:py-script){{tag_name_break}})
+      captures:
+        1: punctuation.definition.tag.begin.html
+        2: entity.name.tag.pyscript.html
+      set: pyscript-close-tag-content
+
+  pyscript-close-tag-content:
+    - meta_scope: meta.tag.pyscript.end.html
+    - include: tag-end
+
+  pyscript:
+    - meta_scope: meta.tag.pyscript.begin.html
+    - include: script-common
+    - match: '>'
+      scope: punctuation.definition.tag.end.html
+      set: pyscript-content
+
+  pyscript-content:
+    - meta_include_prototype: false
+    - match: \s*((<!\[)(CDATA)(\[))
+      captures:
+        1: meta.tag.sgml.cdata.html
+        2: punctuation.definition.tag.begin.html
+        3: keyword.declaration.cdata.html
+        4: punctuation.definition.tag.begin.html
+      pop: 1
+      embed: scope:source.python
+      embed_scope: meta.tag.sgml.cdata.html source.python.embedded.html
+      escape: \]\]>
+      escape_captures:
+        0: meta.tag.sgml.cdata.html punctuation.definition.tag.end.html
+    - match: '{{script_content_begin}}'
+      captures:
+        1: comment.block.html punctuation.definition.comment.begin.html
+      pop: 1
+      embed: scope:source.python
+      embed_scope: source.python.embedded.html
+      escape: '{{pyscript_content_end}}'
+      escape_captures:
+        1: source.python.embedded.html
+        2: comment.block.html punctuation.definition.comment.end.html
+        3: source.python.embedded.html
+        4: comment.block.html punctuation.definition.comment.end.html
