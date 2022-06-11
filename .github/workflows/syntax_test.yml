@@ -74,7 +74,7 @@ jobs:
           mv CSS.sublime-syntax ./Data/Packages/CSS
           mv JavaScript.sublime-syntax ./Data/Packages/JavaScript
           mv Python.sublime-syntax ./Data/Packages/Python
-          mv 'RegExp (Basic).sublime-syntax' ./Data/Packages/Regular Expressions
+          mv 'RegExp (Basic).sublime-syntax' './Data/Packages/Regular Expressions'
           mv 'RegExp (Python).sublime-syntax' ./Data/Packages/Python
           mv SQL.sublime-syntax ./Data/Packages/SQL
       - name: Run syntax tests
