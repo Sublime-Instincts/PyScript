@@ -32,7 +32,7 @@ contexts:
         2: entity.name.tag.pyscript.html
       push: pyscript-close-tag-content
 
-  script-close-tag:
+  pyscript-close-tag:
     - match: (</)((?i:py-script){{tag_name_break}})
       captures:
         1: punctuation.definition.tag.begin.html
