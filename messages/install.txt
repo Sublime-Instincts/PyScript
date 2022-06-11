@@ -1,0 +1,39 @@
+  _____        _____           _       _
+ |  __ \      / ____|         (_)     | |
+ | |__) |   _| (___   ___ _ __ _ _ __ | |_
+ |  ___/ | | |\___ \ / __| '__| | '_ \| __|
+ | |   | |_| |____) | (__| |  | | |_) | |_
+ |_|    \__, |_____/ \___|_|  |_| .__/ \__|
+         __/ |                  | |
+        |___/                   |_|
+======================================================================
+
+PyScript is an enhanced syntax highlighting package for PyScript for
+Sublime Text. You can read more about what PyScript is here
+https://pyscript.net/
+
+
+Quick start
+-----------
+
+If you are seeing this messages, that means you have already installed
+PyScript. Note that since PyScript doesn't have it's own special file
+extension, any of your HTML files will not have automatic syntax highlighting.
+This is done so that the package is less invasive towards your existing
+HTML files. See the README for how you can use the syntax.
+
+Having Problems ?
+-----------------
+
+If you encounter any problems with PyScript, or you think that it
+can be improved to make your work easier, please log an issue on the 
+issue tracker:
+
+    https://github.com/Sublime-Instincts/PyScript/issues
+
+Get in Touch
+------------
+
+PyScript is developed & maintained by Ashwin Shenoy. If you have any
+feedback regarding PyScript, just send a mail on
+ashwinshenoy05@gmail.com
