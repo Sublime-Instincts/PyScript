@@ -63,7 +63,7 @@ jobs:
           wget -O JavaScript.sublime-syntax https://raw.githubusercontent.com/sublimehq/Packages/master/JavaScript/JavaScript.sublime-syntax
           wget -O Python.sublime-syntax https://raw.githubusercontent.com/sublimehq/Packages/master/Python/Python.sublime-syntax
           wget -O 'RegExp (Python).sublime-syntax' 'https://raw.githubusercontent.com/sublimehq/Packages/master/Python/RegExp (Python).sublime-syntax'
-          wget -O 'RegExp (Basic).sublime-syntax' 'https://raw.githubusercontent.com/sublimehq/Packages/master/Regular Expressions/RegExp (Basic).sublime-syntax'
+          wget -O 'RegExp (Basic).sublime-syntax' 'https://raw.githubusercontent.com/sublimehq/Packages/master/Regular%20Expressions/RegExp%20(Basic).sublime-syntax'
           wget -O SQL.sublime-syntax https://raw.githubusercontent.com/sublimehq/Packages/master/SQL/SQL.sublime-syntax
           mkdir -p Data/Packages/HTML
           mkdir -p Data/Packages/CSS
