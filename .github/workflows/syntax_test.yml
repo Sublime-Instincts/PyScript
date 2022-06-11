@@ -69,6 +69,8 @@ jobs:
           mkdir -p Data/Packages/CSS
           mkdir -p Data/Packages/JavaScript
           mkdir -p Data/Packages/Python
+          mkdir -p Data/Packages/SQL
+          mkdir -p 'Data/Packages/Regular Expressions'
           mv HTML.sublime-syntax ./Data/Packages/HTML
           mv 'HTML (Plain).sublime-syntax' ./Data/Packages/HTML
           mv CSS.sublime-syntax ./Data/Packages/CSS
