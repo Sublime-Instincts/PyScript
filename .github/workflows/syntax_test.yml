@@ -62,6 +62,8 @@ jobs:
           wget -O CSS.sublime-syntax https://raw.githubusercontent.com/sublimehq/Packages/master/CSS/CSS.sublime-syntax
           wget -O JavaScript.sublime-syntax https://raw.githubusercontent.com/sublimehq/Packages/master/JavaScript/JavaScript.sublime-syntax
           wget -O Python.sublime-syntax https://raw.githubusercontent.com/sublimehq/Packages/master/Python/Python.sublime-syntax
+          wget -O RegExp (Python).sublime-syntax https://raw.githubusercontent.com/sublimehq/Packages/master/Python/RegExp (Python).sublime-syntax
+          wget -O SQL.sublime-syntax https://raw.githubusercontent.com/sublimehq/Packages/master/SQL/SQL.sublime-syntax
           mkdir -p Data/Packages/HTML
           mkdir -p Data/Packages/CSS
           mkdir -p Data/Packages/JavaScript
@@ -71,5 +73,7 @@ jobs:
           mv CSS.sublime-syntax ./Data/Packages/CSS
           mv JavaScript.sublime-syntax ./Data/Packages/JavaScript
           mv Python.sublime-syntax ./Data/Packages/Python
+          mv RegExp (Python).sublime-syntax ./Data/Packages/Python
+          mv SQL.sublime-syntax ./Data/Packages/SQL
       - name: Run syntax tests
         run: ./syntax_tests
