@@ -1,12 +1,13 @@
 %YAML 1.2
 ---
-scope: text.html.basic
 name: HTML (PyScript)
-file_extensions:
-  - htmlpy
+scope: text.html.basic
+version: 2
 
 extends: Packages/HTML/HTML.sublime-syntax
-version: 2
+
+file_extensions:
+  - htmlpy
 
 variables:
   pyscript_content_end: |-
